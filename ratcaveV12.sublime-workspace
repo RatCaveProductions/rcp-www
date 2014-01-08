@@ -3,14 +3,6 @@
 	{
 		"selected_items":
 		[
-			[
-				"background",
-				"background-position"
-			],
-			[
-				"background-",
-				"background-attachment"
-			]
 		]
 	},
 	"buffers":
@@ -19,7 +11,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 17286,
+				"buffer_size": 18819,
 				"line_ending": "Windows"
 			}
 		},
@@ -27,7 +19,15 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 8242,
+				"buffer_size": 8386,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/sidenav.js",
+			"settings":
+			{
+				"buffer_size": 2277,
 				"line_ending": "Windows"
 			}
 		}
@@ -35,17 +35,34 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 311.0,
 		"selected_items":
 		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Install",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 0.0
+		"width": 512.0
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 126.0,
 		"history":
 		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
 		]
 	},
 	"distraction_free":
@@ -59,20 +76,10 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Nolbear/Desktop/ratcaveV12/css/easydropdown.flat.css",
-		"/C/Users/Nolbear/Desktop/ratcaveV12/css/flat-ui.css",
-		"/C/Users/Nolbear/Desktop/ratcaveV12 - Copy/index.html",
-		"/C/Users/Nolbear/Desktop/ratcaveV12/js/isotope.pkgd.min.js",
-		"/C/Users/Nolbear/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/Nolbear/Desktop/ratcaveV12/css/colortip-1.0-jquery.css",
-		"/C/Users/Nolbear/Desktop/ratcaveV12/js/colortip-1.0-jquery.js",
-		"/C/Users/Nolbear/Desktop/colortip-1.0-jquery.css",
-		"/C/Users/Nolbear/Desktop/ratcaveV12/js/script.js",
-		"/C/Users/Nolbear/Downloads/colortips/colortips.html",
-		"/C/Users/Nolbear/Desktop/ratcaveV12/js/sidenav.js",
-		"/C/Users/Nolbear/Desktop/ratcaveV12/css/style.css",
-		"/C/Users/Nolbear/Desktop/ratcaveV12/index.html",
-		"/C/Users/Nolbear/Desktop/ratcaveV12/ratcaveV12.sublime-project",
+		"/C/Users/Nolbear/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
+		"/C/Users/Nolbear/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
+		"/C/Users/Nolbear/AppData/Roaming/Sublime Text 3/Packages/CSScomb/CSScomb.sublime-settings",
+		"/C/Users/Nolbear/AppData/Roaming/Sublime Text 3/Packages/CSScomb/README.md",
 		"/C/Users/Nolbear/Desktop/Rat Cave Productions/Website/ratcaveV12/css/tipsy.css",
 		"/C/Users/Nolbear/Desktop/Rat Cave Productions/Website/ratcaveV12/css/jquery.qtip.css",
 		"/C/Users/Nolbear/AppData/Local/Temp/Temp1_jquery.qtip.custom (1).zip/jquery.qtip.css",
@@ -91,7 +98,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 		]
@@ -101,89 +108,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"h1",
-			"content",
-			"boobs",
-			"open",
-			"display",
-			"00C384",
-			"29AF84",
-			"filter",
-			"z-index",
-			"cap",
-			"letter",
-			"font",
-			"filters",
-			"lichtfarbe",
-			"leistung",
-			"leuchtenart",
-			"wrap",
-			"word-wrap",
-			"word",
-			"lichtfarbe",
-			"leistung",
-			"leuchtenart",
-			"a",
-			"li",
-			"ul",
-			"filter",
-			" type=\"text/javascript\"",
-			"inner-element",
-			"border",
-			"text-align",
-			"float",
-			"transition",
-			"overflow",
-			"content",
-			"video",
-			"top",
-			"overlay",
-			"#top",
-			"article",
-			"top",
-			"down",
-			"height",
-			"body",
-			"preloader",
-			"boobs",
-			"121212",
-			"111",
-			"222",
-			"img",
-			"fixed",
-			"quote",
-			"h2",
-			"img",
-			"no-margin",
-			"150",
-			"%;\n",
-			"h1",
-			"h3",
-			"tip",
-			"show",
-			"tip.show",
-			"hover",
-			"hidden",
-			"p",
-			"title",
-			"title=\"Boobs\" class=\"smallicon-base black\"",
-			"p",
-			"icon-base",
-			"icon-box",
-			"title",
-			"title'",
-			"color",
-			"title",
-			"1x",
-			"50px",
+			"nav",
+			"nth",
+			"css",
+			"project",
+			"white",
 			"center",
-			"wrapper",
-			"icon",
-			"tooltip",
-			"title",
-			"opacity",
-			"border-top",
-			"\"Raleway\", ",
+			"active",
+			"pactive",
+			"3498db",
+			"stripes",
+			"width",
 			"icon",
 			"img",
 			"iconTouch",
@@ -201,35 +136,6 @@
 		"regex": false,
 		"replace_history":
 		[
-			"stuff",
-			"333",
-			"222",
-			"boobs",
-			"band",
-			"type",
-			"boobs",
-			"band",
-			"type",
-			"option",
-			"select",
-			" ",
-			"",
-			"project-box",
-			"project",
-			"141414",
-			"121212",
-			"242424",
-			"p",
-			"h3",
-			"class=\"smallicon-base\"",
-			"smallicon-base",
-			"smallicon-box",
-			"2x",
-			"box",
-			"border-box",
-			"border-bottom",
-			"\"Raleway\", Arial, ",
-			"\"Raleway\", Arial,",
 			"30"
 		],
 		"reverse": false,
@@ -250,15 +156,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 17286,
+						"buffer_size": 18819,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								172,
-								172
+								2922,
+								2922
 							]
 						],
 						"settings":
@@ -268,9 +174,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -279,15 +186,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8242,
+						"buffer_size": 8386,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5328,
-								5328
+								7113,
+								7113
 							]
 						],
 						"settings":
@@ -296,9 +203,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 4062.0,
+						"translation.y": 6440.0,
 						"zoom_level": 1.0
 					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "js/sidenav.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2277,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2272,
+								2272
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 738.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -306,7 +243,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 26.0
+		"height": 23.0
 	},
 	"input":
 	{
@@ -335,10 +272,14 @@
 		]
 	},
 	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
 	"project": "ratcaveV12.sublime-project",
 	"replace":
 	{
-		"height": 62.0
+		"height": 42.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -354,10 +295,6 @@
 		"height": 500.0,
 		"selected_items":
 		[
-			[
-				"",
-				"C:\\Users\\Nolbear\\Downloads\\colortips\\colortip.sublime-project"
-			]
 		],
 		"width": 380.0
 	},
@@ -376,7 +313,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 203.0,
+	"side_bar_width": 196.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

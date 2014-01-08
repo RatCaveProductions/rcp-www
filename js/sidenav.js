@@ -31,7 +31,7 @@ $(function() {
 		}
 	}, { offset: '30%' });
 
-	$(' #team ').waypoint(function (direction) {
+	$(' #work ').waypoint(function (direction) {
 		if (direction == 'down') {
 			$( "ul li a" ).slice( 1, 3 ).toggleClass( "active" );
 			$( ".selector" ).clearQueue().animate({ "top": "248px"}, 500, "easeOutQuart" );
@@ -42,7 +42,7 @@ $(function() {
 		}
 	}, { offset: '30%' });
 
-	$(' #work ').waypoint(function (direction) {
+	$(' #team ').waypoint(function (direction) {
 		if (direction == 'down') {
 			$( "ul li a" ).slice( 2, 4 ).toggleClass( "active" );
 			$( ".selector" ).clearQueue().animate({ "top": "294px"}, 500, "easeOutQuart" );
