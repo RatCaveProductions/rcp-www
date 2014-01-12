@@ -11,7 +11,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 18819,
+				"buffer_size": 27215,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,7 +19,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 8386,
+				"buffer_size": 11417,
 				"line_ending": "Windows"
 			}
 		},
@@ -76,6 +76,12 @@
 	},
 	"file_history":
 	[
+		"/F/ratcaveV2.01/bios",
+		"/C/Users/Nolbear/Downloads/IconHoverEffects/IconHoverEffects/css/default.css",
+		"/C/Users/Nolbear/Downloads/IconHoverEffects/IconHoverEffects/css/component.css",
+		"/C/Users/Nolbear/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/F/ratcaveV12/js/sidenav.js",
+		"/F/ratcaveV12/css/animations.css",
 		"/C/Users/Nolbear/AppData/Roaming/Sublime Text 3/Packages/View In Browser/View In Browser.sublime-settings",
 		"/C/Users/Nolbear/AppData/Roaming/Sublime Text 3/Packages/User/View In Browser.sublime-settings",
 		"/C/Users/Nolbear/AppData/Roaming/Sublime Text 3/Packages/CSScomb/CSScomb.sublime-settings",
@@ -108,6 +114,56 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"BBB",
+			"p",
+			"transition",
+			"p",
+			"content",
+			"top",
+			"111111",
+			"h1",
+			"services",
+			"dark",
+			"script",
+			"040404",
+			"141414",
+			"242424",
+			"191919",
+			"141414",
+			"hi-icon",
+			".hi-icon-effect-4b",
+			"icon-base",
+			"hi-icon",
+			"icon",
+			"top: 0; right: 0; bottom: 0; left: 0;",
+			"@import",
+			"background-position",
+			"0px",
+			"0",
+			"title",
+			"border-top",
+			"h2",
+			"center-",
+			"center-te",
+			"center",
+			"0.2s",
+			"0.3s",
+			"<i>",
+			"<img src=\"img/thumbs/cam-holiday.png\"/>",
+			"141414",
+			"242424",
+			"project",
+			"project-title",
+			"project-overlay",
+			"project-box",
+			"</span>",
+			"<span>",
+			"h4",
+			"h3",
+			"top",
+			"expand",
+			"expand open",
+			"pulse",
 			"nav",
 			"nth",
 			"css",
@@ -136,6 +192,21 @@
 		"regex": false,
 		"replace_history":
 		[
+			"343838",
+			"060606",
+			"222222",
+			"141414",
+			"111111",
+			"040404",
+			"icon-base2",
+			"0",
+			"<img src=\"img/team/zak.jpg\"/>",
+			"team",
+			"overlay-title",
+			"overlay",
+			"box",
+			"</div>",
+			"<div class=\"project-overlay\">",
 			"30"
 		],
 		"reverse": false,
@@ -147,7 +218,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -156,15 +227,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18819,
+						"buffer_size": 27215,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2922,
-								2922
+								7601,
+								7601
 							]
 						],
 						"settings":
@@ -174,10 +245,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 756.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -186,15 +257,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8386,
+						"buffer_size": 11417,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7113,
-								7113
+								1375,
+								1375
 							]
 						],
 						"settings":
@@ -203,10 +274,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 6440.0,
+						"translation.y": 792.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -222,8 +293,8 @@
 						"selection":
 						[
 							[
-								2272,
-								2272
+								616,
+								616
 							]
 						],
 						"settings":
@@ -232,10 +303,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 738.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -243,7 +314,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 21.0
 	},
 	"input":
 	{
@@ -279,7 +350,7 @@
 	"project": "ratcaveV12.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":

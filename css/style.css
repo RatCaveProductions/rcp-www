@@ -11,19 +11,18 @@
  
 	* COLOR PALETTE:
 		#3498DB - Primary Blue
-		#242424 - Light Gray
-		#191919 - Medium Gray
-		#141414 - Dark Gray
+		#060606 - Light Gray
+		#111111 - Medium Gray
+		#060606 - Dark Gray
 
 	=========================================================== */
 
 
 html {
-	overflow-x:hidden;	
+	overflow-x: hidden;	
 }
 
 html, html a {
-	font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -34,7 +33,7 @@ html, body {
 }
 
 body {
-	background: #141414;	
+	background: #060606;	
 }
 
 
@@ -56,7 +55,7 @@ nav {
 	box-sizing: border-box;
 	width: 280px;
 	height: 100%;
-	background: #242424;
+	background: #222222;
 	text-align: right;
 }
 
@@ -76,7 +75,6 @@ nav a {
 
 nav ul {
 	margin-top: 50px;
-	width: 100%;
 }
 
 nav ul li {
@@ -91,7 +89,7 @@ nav ul li a {
 	box-sizing: border-box;
 	padding: 15px 20px;
 	width: 100%;
-	color: #141414;
+	color: #0D0D0D;
 	
 	text-decoration: none;
 	
@@ -154,15 +152,14 @@ video {
 	width: 100%;
 	height: 100%;
 	background: url(../img/stripes.png);
-	background-position: 0px 0px;
 	opacity: 1;
 }
 
 a.downarrow {
 	position: absolute;
-	bottom: 0px;
+	bottom: 0;
 	z-index: 2;
-	padding: 20px 0px;
+	padding: 20px 0;
 	width: 100%;
 	color: #555;
 	text-align: center;
@@ -190,9 +187,8 @@ article {
 	box-sizing: border-box;
 	width: 100%;
 	height: auto;
-	min-height: 110%;
 	padding: 100px 0;
-	background: #191919;		
+	background: #111111;		
 	position: relative;
 	z-index: 2;
 }
@@ -207,7 +203,7 @@ img {
 }
 
 #services, #team {
-	background: #141414;
+	background: #060606;
 }
 
 .weighted-padding {
@@ -216,8 +212,8 @@ img {
 
 .content {
 	margin: 0 auto;
-	min-height: 600px;
 	width: 800px;
+	min-height: 600px;
 }
 
 
@@ -239,7 +235,7 @@ img {
 
 .icon-box {
 	float: left;
-	padding: 15px 15px 0px 15px;
+	padding: 15px 15px 0 15px;
 	width: calc(25% - 30px);
 	height: auto;
 	text-align: center;
@@ -293,7 +289,7 @@ img {
 
 .icon-base:hover {
 	background: rgba(255,255,255,1);
-	color: #141414;	
+	color: #060606;	
 }
 
 .icon-base:hover:after {
@@ -312,7 +308,7 @@ img {
 
 .smallicon-box {
 	float: left;
-	padding: 15px 0px 0px 0px;
+	padding: 15px 0 0 0;
 	width: 140px;
 	height: auto;
 	text-align: center;
@@ -343,7 +339,7 @@ img {
 
 .smallicon-base:hover {
 	background: rgba(255,255,255,1);
-	color: #141414;	
+	color: #060606;	
 }
 
 
@@ -384,7 +380,7 @@ a.project-box {
 
 .project-box img {
 	position: absolute;
-	top: 0; right: 0; right: 0; bottom: 0;
+	top: 0; right: 0; bottom: 0; left: 0;
 	min-height: 100%;
 	width: 100%;
 	height: auto;
@@ -399,7 +395,7 @@ a.project-box {
 	box-sizing: border-box;
 	background: rgba(52,152,219,0.7);
 	display: table;
-	padding: 0px 30px;
+	padding: 0 30px;
 
 	opacity: 0;
 
@@ -468,7 +464,7 @@ a.team-box {
 }
 
 .team-title p {
-	padding-top: 40px;
+	padding-top: 25px;
 	text-align: left;
 }
 
@@ -517,7 +513,7 @@ a.team-box {
 
 h1 {
 	margin-bottom: 50px;
-	color: #242424;
+	color: #222222;
 	text-align: center;
 	letter-spacing: 0.05em;
 	font-weight: 400;
@@ -545,7 +541,7 @@ h2 i {
 }
 
 .nav-box a h2 {
-	padding: 50px 25px 0px 0px;
+	padding: 50px 25px 0 0;
 	text-align: right;
 }
 
@@ -576,7 +572,7 @@ h4 {
 
 p {	
 	padding: 20px 0 0 0;
-	color: #999;
+	color: #BBB;
 	letter-spacing: 0.05em;
 	font-weight: 500;
 	font-size: 14px;
@@ -595,7 +591,7 @@ p.center-text {
 
 p.center-text-small {
 	margin: 20px 100px 50px 100px;
-	padding: 0px 20px;
+	padding: 0 20px;
 	text-align: center;
 }
 
@@ -603,12 +599,18 @@ p span {
 	color: #3498db;
 }
 
-.white {
-	color: #fff;
+p a {
+	color: #BBB;
+	text-decoration: none;
+
+	border-bottom: 1px solid white;
+
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
 }
 
-.blue {
-	color: #3498DB;
+p a:hover {
+	color: #FFF;
 }
 
 
@@ -633,6 +635,14 @@ p span {
 	overflow: hidden;
 }
 
+.white {
+	color: #fff;
+}
+
+.blue {
+	color: #3498DB;
+}
+
 
 
 
@@ -650,7 +660,7 @@ p span {
     bottom: 0;
     left: 0;
     z-index: 3; /* makes sure it stays on top */
-    background: #141414; /* change if the mask should have another color than white */
+    background: #060606; /* change if the mask should have another color than white */
 }
 
 #status {
@@ -672,7 +682,7 @@ p span {
 .custom-theme {
 	margin-top: 15px;
 	padding: 20px;
-	border: 0px solid #333;
+	border: 0 solid #333;
 	border-radius: 4px;
 	background-color: #333;
 }
