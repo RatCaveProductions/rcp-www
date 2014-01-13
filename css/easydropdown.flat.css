@@ -30,7 +30,7 @@
 
 .dropdown{
 	position: relative;
-	width: 30%;
+	width: 47%;
 	cursor: pointer;
 	font-weight: 200;
 	background: #222;
@@ -125,7 +125,7 @@
 .dropdown .selected,
 .dropdown li{
 	display: block;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
 	line-height: 1;

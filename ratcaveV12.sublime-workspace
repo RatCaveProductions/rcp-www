@@ -11,7 +11,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 27215,
+				"buffer_size": 28169,
 				"line_ending": "Windows"
 			}
 		},
@@ -19,7 +19,7 @@
 			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 11417,
+				"buffer_size": 11620,
 				"line_ending": "Windows"
 			}
 		},
@@ -29,6 +29,14 @@
 			{
 				"buffer_size": 2277,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/easydropdown.flat.css",
+			"settings":
+			{
+				"buffer_size": 3785,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -114,6 +122,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"img",
+			"article",
+			"team",
+			"3498DB",
+			"font",
+			"text-align",
+			"width",
+			"33",
+			"filter",
+			"z-index",
+			"article",
+			"acoustic",
+			"clearfix",
+			"overflow",
+			"project-co",
+			"content",
+			"project-content",
 			"BBB",
 			"p",
 			"transition",
@@ -192,6 +217,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"0074D9",
 			"343838",
 			"060606",
 			"222222",
@@ -218,7 +244,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -227,15 +253,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 27215,
+						"buffer_size": 28169,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7601,
-								7601
+								6057,
+								6057
 							]
 						],
 						"settings":
@@ -245,10 +271,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1625.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -257,15 +283,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 11417,
+						"buffer_size": 11620,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1375,
-								1375
+								2908,
+								2908
 							]
 						],
 						"settings":
@@ -274,10 +300,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 792.0,
+						"translation.y": 2469.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -306,7 +332,36 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "css/easydropdown.flat.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3785,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2187,
+								2187
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1354.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

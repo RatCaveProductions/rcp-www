@@ -10,7 +10,7 @@
 	* AUTHOR: Nolan Manning
  
 	* COLOR PALETTE:
-		#3498DB - Primary Blue
+		#0074D9 - Primary Blue
 		#060606 - Light Gray
 		#111111 - Medium Gray
 		#060606 - Dark Gray
@@ -193,6 +193,10 @@ article {
 	z-index: 2;
 }
 
+article .ontop {
+	z-index: 5;
+}
+
 #about img {
 	margin-bottom: -104px;
 	text-align: center;
@@ -213,7 +217,6 @@ img {
 .content {
 	margin: 0 auto;
 	width: 800px;
-	min-height: 600px;
 }
 
 
@@ -361,15 +364,21 @@ img {
 .filter-spacer {
 	position: relative;
 	float: left;
-	width: 5%;
+	width: 6%;
 	height: 48px;
+}
+
+#project-content {
+	float: left;
+	height: 100%;
+	width: 800px;
 }
 
 .project-box {
     position: relative;
 	float: left;
     overflow: hidden;
-    width: 33.333%;
+    width: 33.3%;
     height: 200px;
     text-align: center;
 }
@@ -506,7 +515,7 @@ a.team-box {
 
 /*  ==========================================================
 
-	* HEADERS and TEXT
+	* HEADERS and PARAGRAPHS
 
     ==========================================================  */
 
@@ -583,8 +592,8 @@ p {
 p.center-text {
 	margin: 0 100px 50px 100px;
 	padding: 0 20px;
-	border-right: 3px solid #3498db;
-	border-left: 3px solid #3498db;
+	border-right: 3px solid #0074D9;
+	border-left: 3px solid #0074D9;
 	text-align: center;
 	font-size: 18px;
 }
@@ -596,7 +605,7 @@ p.center-text-small {
 }
 
 p span {
-	color: #3498db;
+	color: #0074D9;
 }
 
 p a {
@@ -640,7 +649,21 @@ p a:hover {
 }
 
 .blue {
-	color: #3498DB;
+	color: #0074D9;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
 }
 
 
