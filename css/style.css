@@ -18,7 +18,7 @@
 		#060606 - Dark Gray
 
 		#666666 - Paragraph
-		#FFFFFF - Paragraph Link
+		#999999 - Paragraph Link
 		#FFFFFF - Paragraph Link Hover
 
 	=========================================================== */
@@ -138,7 +138,7 @@ p span {
 }
 
 p a {
-	color: #FFFFFF;
+	color: #999999;
 	text-decoration: none;
 
 	-webkit-transition: all 0.3s;
@@ -151,7 +151,7 @@ p a:hover {
 
 
 p a span {
-	color: #FFFFFF;
+	color: #999999;
 	font-size: 36px;
 
 	-webkit-transition: all 0.3s;

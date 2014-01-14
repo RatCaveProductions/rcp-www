@@ -33,13 +33,13 @@
 	width: 47%;
 	cursor: pointer;
 	font-weight: 200;
-	background: #222;
+	background: #222222;
 	padding: 8px 0px 8px;
 	float: left;
 	
 	border-radius: 5px;
 	
-	color:  #000;
+	color:  #000000;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	user-select: none;
@@ -51,7 +51,7 @@
 
 .dropdown:hover,
 .dropdown.focus{
-	background: #333;
+	background: #333333;
 }
 
 /* CARAT */
@@ -63,7 +63,7 @@
 	top: 50%;
 	margin-top: -3px;
 	border: 6px solid transparent;
-	border-top: 6px solid #FFF;
+	border-top: 6px solid #FFFFFF;
 	z-index: 4;
 	
 	-webkit-transform-origin: 50% 20%;
@@ -74,15 +74,15 @@
 }
 
 .dropdown:hover .carat:after{
-	border-top-color: #f4f4f4;
+	border-top-color: #FFFFFF;
 }
 
 .dropdown.focus .carat{
-	border-top-color: #f8f8f8;
+	border-top-color: #999999;
 }
 
 .dropdown.focus .carat:after{
-	border-top-color: #0180d1;
+	border-top-color: #666666;
 }
 
 .dropdown.open .carat{
@@ -119,7 +119,7 @@
 
 /* SELECTED FEEDBACK ITEM */ 
 .dropdown .selected {
-    color: #FFF;
+    color: #FFFFFF;
 }
 
 .dropdown .selected,
@@ -143,12 +143,6 @@
 	width: 60px;
 	
 	border-radius: 0 5px 5px 0;
-	box-shadow: inset -55px 0 25px -20px #222;
-}
-
-.dropdown:hover .selected::after,
-.dropdown.focus .selected::after{
-	box-shadow: inset -55px 0 25px -20px #333;
 }
 
 /* DROP DOWN WRAPPER */
@@ -160,16 +154,16 @@
 	right: 0;
 	top: 100%;
 	margin-top: 1px;
-	background: #333;
+	background: #222222;
 	overflow: hidden;
 	opacity: 0;
-	color: #111;
+	color: #060606;
 	
 	border-radius: 5px;
 }
 
 .dropdown:hover div{
-	background: #333;
+	background: #222222;
 	
 	border-radius: 5px;
 }
@@ -190,12 +184,6 @@
 	right: 0;
 	bottom: 0;
 	height: 50px;
-	
-	box-shadow: inset 0 -50px 30px -35px #333;
-}
-
-.dropdown.scrollable:hover div::after{
-	box-shadow: inset 0 -50px 30px -35px #333;
 }
 
 .dropdown.scrollable.bottom div::after{
@@ -224,7 +212,7 @@
 .dropdown li{
 	list-style: none;
 	padding: 14px 12px;
-	border-bottom: 1px solid #222;
+	border-bottom: 1px solid #111111;
 }
 
 .dropdown li:last-child {
@@ -234,13 +222,12 @@
 /* .focus class is also added on hover */
 
 .dropdown li.focus{
-	background: #333;
 	position: relative;
 	z-index: 6;
-	color: #fff;
+	color: #FFFFFF;
 }
 
 .dropdown li.active{
-	background: #222;
-	color: #fff;
+	background: #333333;
+	color: #FFFFFF;
 }
