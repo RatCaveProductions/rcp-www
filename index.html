@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="no-js">
     <head>
 
         <meta charset="utf-8">
@@ -13,15 +13,25 @@
         <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css">
         <link rel="stylesheet" type="text/css" href="css/jquery.maximage.min.css">
-        <!-- <link rel="stylesheet" type="text/css" href="http://qtip2.com/v/2.2.0/jquery.qtip.min.css"> -->        
+        <!-- <link rel="stylesheet" type="text/css" href="http://qtip2.com/v/2.2.0/jquery.qtip.min.css"> -->         
         <link rel="stylesheet" type="text/css" href="css/easydropdown.flat.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="css/touch.css">
 
+        <!-- Webfonts -->
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Raleway:500' rel='stylesheet' type='text/css'>
-        
+
+        <!-- jQuery -->
         <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 		<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
+
+        <!-- Syze -->
+        <script src="js/syze.min.js"></script>
+        <script>
+            syze.sizes(360, 500, 700, 950).names({ 360:'MobileTall', 500:'MobileWide', 700:'Laptop', 950:'Desktop' });
+            syze.debounceRate(25);
+        </script>       
 
     </head>
     
@@ -34,7 +44,7 @@
     
 
 
-        <!-- Nav -->
+        <!-- Nav
         <nav id="nav" class="hide">
             <div class="nav-box">
 	        	<a href="#top"><h2>RAT CAVE<br><span>PRODUCTIONS</span></h2></a>
@@ -63,21 +73,25 @@
             <div class="selector-box">
                	<div class="selector"></div>
             </div>
-        </nav>
+        </nav> -->
 
-
+        <div id="top-anchor"></div>
 
         <a href="#about" class="downarrow" id="downarrow">
             <i class="fa fa-chevron-down fa-4x"></i>
         </a>
         
         <div id="top">
-            <video autoplay loop autobuffer="autobuffer" muted poster="img/projector.png" width="1920" height="1080">
+            <video autoplay loop autobuffer="autobuffer" muted poster="img/projector.png" data-stellar-ratio="0.25">
                 <source src="img/projector.webm" type="video/webm" />
                 <source src="img/projector.mp4" type="video/mp4" />
 			</video>
             <div class="overlay"></div>
-        	<h1><img src="img/rcp.svg" height="400px" width="400px"><br>RAT CAVE<br>PRODUCTIONS</h1>
+            <div id="logo" data-stellar-ratio="0.4"></div>
+        </div>
+
+        <div id="touch-top">
+            <div id="logo"></div>
         </div>
         
 
@@ -181,45 +195,6 @@
 
                 </div>
 
-                <!-- <div class="icon-wrapper small" id="no-margin">
-
-                    <div class="smallicon-box">
-                        <div class="smallicon-base">
-                            <i class="fa fa-volume-up fa-2x"></i>
-                        </div>
-                        <p class="white">MIXING</p>
-                    </div> 
-                       
-                    <div class="smallicon-box">
-                        <div class="smallicon-base">
-                            <i class="fa fa-pencil fa-2x"></i>
-                        </div>
-                        <p class="white">GRAPHIC DESIGN</p>
-                    </div>
-                        
-                    <div class="smallicon-box">
-                        <div class="smallicon-base">
-                            <i class="fa fa-tag fa-2x"></i>
-                        </div>
-                        <p class="white">BRANDING</p>
-                    </div>
-
-                    <div class="smallicon-box">
-                        <a class="smallicon-base">
-                            <i class="fa fa-desktop fa-2x"></i>
-                        </a>
-                        <p class="white">WEB DESIGN</p>
-                    </div>
-
-                    <div class="smallicon-box">
-                        <div class="smallicon-base">
-                            <i class="fa fa-lightbulb-o fa-2x"></i>
-                        </div>
-                        <p class="white">CONCEPT</p>
-                    </div>
-
-                </div> -->
-
                 <h4 class="blue">NEED SOMETHING ELSE?</h4>
                 <p class="center-text-small" id="no-margin">We can do just about anything you might need to help market, brand, or otherwise promote your identity. If your needs don't fit into the above categories, feel free to drop us a line anyway! Chances are we'll still be able to help you out.<!-- <a target="_blank" href="equipment.pdf">Click here</a> to check out our equipment list.--></p>
 
@@ -270,8 +245,36 @@
 
                 <div id="project-content">
 
+                    <a target="_blank" href="http://www.youtube.com/watch?v=51Hiy5RNYlA&list=PLNRkOH1pfT76A_gamfe6bS9P7xFOp-Jqy&feature=share" class="project-box live lovechild">
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/lovechild-backbooth.jpg"/>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-title">
+                                <h2>LOVECHILD</h2>
+                                <h4>LIVE @ THE BACKBOOTH</h4>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div class="work-column-spacer"></div>
+
+                    <a target="_blank" href="http://www.youtube.com/watch?v=WXRTtim9qok&feature=share&list=PLNRkOH1pfT77wefkRYvhKyhuhp1hkeEHP" class="project-box live foxing">
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/foxing-atticus.jpg"/>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-title">
+                                <h2>FOXING</h2>
+                                <h4>LIVE @ THE ATTICUS BAR</h4>
+                            </div>
+                        </div>
+                    </a>
+
                     <a target="_blank" href="http://youtu.be/XIxfBJZUR7g" class="project-box live oldgray">
-                        <img src="img/thumbs/og-artist.jpg"/>
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/og-artist.jpg"/>
+                        </div>
                         <div class="project-overlay">
                             <div class="project-title">
                                 <h2>OLD GRAY</h2>
@@ -280,8 +283,12 @@
                         </div>
                     </a>
 
+                    <div class="work-column-spacer"></div>
+
                     <a target="_blank" href="http://www.youtube.com/watch?v=8cGYwws6RLA&feature=share&list=PLNRkOH1pfT74FDH7MUh1mMTeSKx15fltj" class="project-box acoustic live camboucher oldgray">
-                        <img src="img/thumbs/cam-holiday.png"/>
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/cam-holiday.png"/>
+                        </div>
                         <div class="project-overlay">
                             <div class="project-title">
                                 <h2>CAMERON BOUCHER</h2>
@@ -291,7 +298,9 @@
                     </a>
 
                     <a target="_blank" href="http://youtu.be/aWHrsJqkv84" class="project-box musicvid ikg">
-                        <img src="img/thumbs/ikg-collector.png"/>
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/ikg-collector.png"/>
+                        </div>
                         <div class="project-overlay">
                             <div class="project-title">
                                 <h2>I KILL GIANTS</h2>
@@ -300,8 +309,12 @@
                         </div>
                     </a>
 
+                    <div class="work-column-spacer"></div>
+
                     <a target="_blank" href="http://youtu.be/3i2CYSsQm3w" class="project-box promo misc">
-                        <img src="img/thumbs/tsr-summer2013.png"/>
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/tsr-summer2013.png"/>
+                        </div>
                         <div class="project-overlay">
                             <div class="project-title">
                                 <h2>TOPSHELF RECORDS</h2>
@@ -311,7 +324,9 @@
                     </a>
 
                     <a target="_blank" href="http://youtu.be/39Xb14o6epI" class="project-box musicvid oldgray">
-                        <img src="img/thumbs/og-359.png"/>
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/og-359.png"/>
+                        </div>
                         <div class="project-overlay">
                             <div class="project-title">
                                 <h2>OLD GRAY</h2>
@@ -320,8 +335,12 @@
                         </div>
                     </a>
 
+                    <div class="work-column-spacer"></div>
+
                     <a target="_blank" href="http://www.youtube.com/watch?v=DpZoLtDdz5s&feature=share&list=PLNRkOH1pfT75y0kdadDw9bpkH1tARA_FV" class="project-box live twiabp">
-                        <img src="img/thumbs/twi-giglife.png"/>
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/twi-giglife.png"/>
+                        </div>
                         <div class="project-overlay">
                             <div class="project-title">
                                 <h2>THE WORLD IS...</h2>
@@ -331,7 +350,9 @@
                     </a>
 
                     <a target="_blank" href="http://www.youtube.com/watch?v=sFXRRIpHq1E&feature=share&list=PLNRkOH1pfT75wzPFR4dic9V6VRxqbhIbP" class="project-box live pianos">
-                        <img src="img/thumbs/pianos-hiding.png"/>
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/pianos-hiding.png"/>
+                        </div>
                         <div class="project-overlay">
                             <div class="project-title">
                                 <h2>PIANOS BECOME THE TEETH</h2>
@@ -340,8 +361,12 @@
                         </div>
                     </a>
 
+                    <div class="work-column-spacer"></div>
+
                     <a target="_blank" href="http://www.youtube.com/watch?v=tkpHiP9TFRY&feature=share&list=PLNRkOH1pfT77TZv5K1TKX343C6l-dztsM" class="project-box live slingshot">
-                        <img src="img/thumbs/slingshot-may.png"/>
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/slingshot-may.png"/>
+                        </div>
                         <div class="project-overlay">
                             <div class="project-title">
                                 <h2>SLINGSHOT DAKOTA</h2>
@@ -351,7 +376,9 @@
                     </a>
 
                     <a target="_blank" href="http://youtu.be/MsTdzqJF35o" class="project-box live oldgray">
-                        <img src="img/thumbs/og-dem.png"/>
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/og-dem.png"/>
+                        </div>
                         <div class="project-overlay">
                             <div class="project-title">
                                 <h2>OLD GRAY</h2>
@@ -360,8 +387,12 @@
                         </div>
                     </a>
 
+                    <div class="work-column-spacer"></div>
+
                     <a target="_blank" href="http://youtu.be/PRt3r9ncR20" class="project-box live oldgray">
-                        <img src="img/thumbs/og-leaves.png"/>
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/og-leaves.png"/>
+                        </div>
                         <div class="project-overlay">
                             <div class="project-title">
                                 <h2>OLD GRAY</h2>
@@ -371,7 +402,9 @@
                     </a>
 
                     <a target="_blank" href="http://vimeo.com/36700108" class="project-box acoustic live camboucher">
-                        <img src="img/thumbs/cam-opensails.png"/>
+                        <div class="project-imgbox">
+                            <img src="img/thumbs/cam-opensails.png"/>
+                        </div>
                         <div class="project-overlay">
                             <div class="project-title">
                                 <h2>CAMERON BOUCHER</h2>
@@ -549,7 +582,7 @@
 
                 <p class="center-text-small">Please send all general inquiries to:</p>
 
-                <p target="_blank" class="email"><a href="mailto:hello@ratcaveproductions.com">HELLO<span>@</span>RATCAVEPRODUCTIONS.COM</a></p>
+                <p target="_blank" class="email"><a href="mailto:hello@ratcaveproductions.com">HELLO@RATCAVEPRODUCTIONS.COM</a></p>
 
             </div>
 
@@ -569,7 +602,7 @@
 
                 <p class="center-text-small">Copyright © 2013-2014 Rat Cave Productions LLC<br></p>
 
-                <a class="uparrow-box" href="#top">
+                <a class="uparrow-box" href="#top-anchor">
                     <p class="uparrow">
                         <i class="fa fa-chevron-up fa-4x"></i>
                     </p>
@@ -579,19 +612,19 @@
 
         </article>
 
-
-
         <script src="js/jquery.scrollTo.js"></script>
         <script src="js/jquery.localscroll.js"></script>
         <script src="js/jquery.easing.1.3.js"></script>
-        <script src="js/sidenav.js"></script>
+        <!-- <script src="js/script.js"></script> -->
         <script src="js/jquery.maximage.min.js"></script>
         <script src="js/waypoints.min.js"></script>
         <!-- <script src="http://qtip2.com/v/2.2.0/jquery.qtip.min.js"></script>
         <script src="js/isotope.pkgd.min.js"></script>*/ -->
         <script src="js/jquery.easydropdown.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/jRespond.min.js"></script>
 
-        <!-- Isotope 
+        <!-- Isotope
         <script type='text/javascript'>
             $(function(){
                 
@@ -621,9 +654,9 @@
                     return false;
                 });
             });
-        </script>
+        </script> -->
 
-        qtip2
+        <!-- qtip2
         <script type="text/javascript">
             $('[title]').qtip({
                 style: { 
@@ -672,16 +705,52 @@
 			});
 		</script>
 
-        <!-- Google Analytics -->
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-            ga('create', 'UA-47117120-1', 'ratcaveproductions.com');
-            ga('send', 'pageview');
+        <!-- Stellar -->
+        <script type="text/javascript">
+            $(function() {
+                $.stellar();
+            });
         </script>
+
+        <!-- jRespond 
+        <script src="js/jRespond.js"></script>
+        <script>        
+            // call jRespond and add breakpoints
+            var jRes = jRespond([
+                {
+                    label: 'handheld',
+                    enter: 0,
+                    exit: 899
+                },{
+                    label: 'not-handheld',
+                    enter: 900,
+                    exit: 10000
+                }
+            ]);
+            
+            // usage
+            var outputStr = document.getElementById('output');
+            var wrapperheight = $("#top").height();
+
+            jRes.addFunc({
+                breakpoint: 'handheld',
+                enter: function() {
+                    $(' #nav ').hide("slide", { direction: "left", duration: 200, easing: 'swing' } );
+                    $( 'article' ).clearQueue().animate({ "padding": "100px 0"}, 1000, "easeOutBack" );
+                    $.waypoints('disable')
+                },
+                exit: function() {
+                    if($(window).scrollTop() > wrapperheight){
+                        $(' #nav ').show("slide", { direction: "left", duration: 500, easing: 'easeOutQuart' } );
+                        $( 'article' ).clearQueue().animate({ "padding": "100px 50px 100px 330px"}, 1000, "easeOutBack" );                    
+                    }
+                    else {
+                        //do nothing
+                    }
+                    $.waypoints('enable') 
+                }
+            });
+        </script> -->
 
     </body>
 </html>
