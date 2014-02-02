@@ -28,10 +28,6 @@ html {
 	overflow-x: hidden;	
 }
 
-html, html a {
-    -webkit-font-smoothing: antialiased;
-}
-
 html, body {
 	width: 100%;
 	height: 100%;
@@ -39,8 +35,13 @@ html, body {
 }
 
 body {
-	background: #060606;	
+	background: #000000;	
 }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
 
 
 
@@ -119,18 +120,45 @@ p {
 }
 
 p.center-text {
-	margin: 0 100px 50px 100px;
 	padding: 0 20px;
 	border-right: 3px solid #0074D9;
 	border-left: 3px solid #0074D9;
 	text-align: center;
 	font-size: 18px;
 }
+.isMobileTall p.center-text {
+	padding: 0 10px;
+	margin: 0 0 50px 0;
+}
+.isMobileWide p.center-text {
+	padding: 0 10px;
+	margin: 0 0 50px 0;
+}
+.isLaptop p.center-text {
+	margin: 0 0 50px 0;
+}
+.isDesktop p.center-text {
+	margin: 0 100px 50px 100px;
+}
 
 p.center-text-small {
 	margin: 20px 100px;
 	padding: 0 20px;
 	text-align: center;
+}
+.isMobileTall p.center-text-small {
+	padding: 0 10px;
+	margin: 0 0 50px 0;
+}
+.isMobileWide p.center-text-small {
+	padding: 0 10px;
+	margin: 0 0 50px 0;
+}
+.isLaptop p.center-text-small {
+	margin: 0 0 50px 0;
+}
+.isDesktop p.center-text-small {
+	margin: 0 100px 50px 100px;
 }
 
 p span {
@@ -258,40 +286,60 @@ nav ul li a:hover:not(.active) {
 
 
 #top {
-	
 	position: relative;
 	z-index: 1;
 	width: 100%;
 	height: 100%;
 }
 
+
 video {
     position:fixed;
     top:0;
     left:0;
-    z-index: -1;
+    z-index: -6;
 }
 
 .overlay {
 	position: fixed;
 	top: 0; right: 0; bottom: 0; left: 0;
-	z-index: -1;
+	z-index: -5;
 	width: 100%;
 	height: 100%;
 	background: url(../img/stripes.png);
-	opacity: 1;
+}
+
+#logo {
+	position: fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: url(../img/rcp.svg) no-repeat center center;
+	background-size: 50% 50%;
+}
+
+#touch-top {
+	display: none;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background: url(../img/projector.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 a.downarrow {
-	position: absolute;
+	position: fixed;
 	bottom: 0;
 	z-index: 2;
-	padding: 20px 0;
 	width: 100%;
 	color: #666666;
 	text-align: center;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
+	padding-bottom: 25px;
 }
 
 a.downarrow:hover {
@@ -299,6 +347,18 @@ a.downarrow:hover {
 	color: #FFFFFF;
 }
 
+.isMobileTall .downarrow {
+	font-size: 6px;
+}
+.isMobileWide .downarrow {
+	font-size: 8px;
+}
+.isLaptop .downarrow {
+	font-size: 10px;
+}
+.isDesktop .downarrow {
+	font-size: 12px;
+}
 
 
 
@@ -342,11 +402,20 @@ img {
 }
 
 .content {
-	margin: 0 auto;
+    margin: 0 auto;
+}
+.isMobileTall .content {
+	width: 300px;
+}
+.isMobileWide .content {
+	width: 400px;
+}
+.isLaptop .content {
+	width: 600px;
+}
+.isDesktop .content {
 	width: 800px;
 }
-
-
 
 
 /*  ==========================================================
@@ -359,16 +428,30 @@ img {
 .icon-wrapper {
 	overflow: hidden;
 	margin-bottom: 50px;
-	width: 800px;
 	height: 100%;
+	width: 100%;
 }
 
 .icon-box {
 	float: left;
-	padding: 15px 15px 0 15px;
-	width: calc(25% - 30px);
 	height: auto;
 	text-align: center;
+}
+.isMobileTall .icon-box {
+	width: 50%;
+	padding: 0;
+}
+.isMobileWide .icon-box {
+	width: 50%;
+	padding: 0;
+}
+.isLaptop .icon-box {
+	width: calc(50% - 30px);
+	padding: 15px 15px 0 15px;
+}
+.isDesktop .icon-box {
+	width: calc(25% - 30px);
+	padding: 15px 15px 0 15px;
 }
 
 .icon-base {
@@ -376,61 +459,67 @@ img {
 	z-index: 1;
 	display: block;
 	margin: 0 auto;
-	width: 100px;
-	height: 100px;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.05);
 	color: #FFFFFF;
+}
+.isMobileTall .icon-base {
+	width: 60px;
+	height: 60px;
+}
+.isMobileWide .icon-base {
+	width: 80px;
+	height: 80px;
+}
+.isLaptop .icon-base, .isDesktop .icon-base {
+	width: 100px;
+	height: 100px;
 }
 
 .icon-base i {
 	position: absolute;
 	display: block;
+	width: 100%;
+	height: 100%;	
+}
+.isMobileTall .icon-base i {
+	font-size: 26px;
+	padding-top: 17px;
+}
+.isMobileWide .icon-base i {
+	font-size: 36px;
+	padding-top: 22px;
+}
+.isLaptop .icon-base i, .isDesktop .icon-base i {
 	padding-top: 27px;
-	width: 100%;
-	height: 100%;	
 }
 
-.icon-wrapper.small {
-	margin-right: 50px;
-	margin-left: 50px;
-	width: 700px;
+.isMobileTall .icon-box h3 {
+	font-size: 14px;
+	width: 150px;
+}
+.isMobileWide .icon-box h3 {
+	font-size: 16px;
+	width: 200px;
 }
 
-.smallicon-box {
-	float: left;
-	padding: 15px 0 0 0;
-	width: 140px;
-	height: auto;
-	text-align: center;
+.isMobileTall .icon-box p {
+	width: calc(100%-10px);
+	padding: 20px 5px 0 5px;
+	margin-bottom: 40px;
+	font-size: 12px;
 }
-
-.smallicon-base {
-	position: relative;
-	z-index: 1;
-	display: block;
+.isMobileWide .icon-box p {
+	width: 180px;
 	margin: 0 auto;
-	width: 70px;
-	height: 70px;
-	border-radius: 50%;
-	background: rgba(255, 255, 255, 0.05);
-	color: #FFFFFF;
-	
-	-webkit-transition: background 0.3s, color 0.3s;
-	transition: background 0.3s, color 0.3s;
+	margin-bottom: 40px;
+	padding: 20px 0 0 0;
 }
-
-.smallicon-base i {
-	position: absolute;
-	display: block;
-	padding-top: 18px;
-	width: 100%;
-	height: 100%;	
+.isLaptop .icon-box p {
+	margin-bottom: 40px;
 }
-
-.smallicon-base:hover {
-	background: rgba(255,255,255,1);
-	color: #060606;	
+.isDesktop .icon-box p {
+	margin-bottom: 0;
 }
 
 
@@ -459,29 +548,53 @@ img {
 #project-content {
 	float: left;
 	height: 100%;
-	width: 800px;
+	width: 100%;
 }
 
 .project-box {
     position: relative;
 	float: left;
     overflow: hidden;
+    text-align: center;
+}
+.isMobileTall .project-box {
+	width: 100%;
+    height: 150px;
+}
+.isMobileWide .project-box {
+	width: 50%;
+    height: 150px;
+}
+.isLaptop .project-box {
+	width: 50%;
+    height: 200px;
+}
+.isDesktop .project-box {
     width: 33.3%;
     height: 200px;
-    text-align: center;
 }
 
 a.project-box {
 	text-decoration: none;
 }
 
-.project-box img {
+.work-column-spacer {
+	float: left;
+	margin-bottom: 16px;
+}
+
+.project-imgbox {
 	position: absolute;
 	top: 0; right: 0; bottom: 0; left: 0;
-	min-height: 100%;
+	max-height: 200px;
 	width: 100%;
-	height: auto;
 	text-align: center;
+	overflow: hidden;
+}
+
+.project-imgbox img {
+	width: 100%;
+    height: auto;
 }
 
 .project-overlay {
@@ -512,6 +625,14 @@ a.project-box {
 	margin: auto;
 }
 
+.isMobileTall .project-box h2, .isMobileWide .project-box h2 {
+	font-size: 20px;
+}
+.isMobileTall .project-box h4, .isMobileWide .project-box h4 {
+	font-size: 14px;
+}
+
+
 
 
 
@@ -526,9 +647,26 @@ a.project-box {
     position: relative;
 	float: left;
     overflow: hidden;
-    width: 49%;
-    height: 300px;
     text-align: center;
+}
+.isMobileTall .team-box {
+    height: 230px;
+    width: 300px;
+    margin-bottom: 12px;
+}
+.isMobileWide .team-box {
+    height: 306px;
+    width: 400px;
+    margin-bottom: 16px;
+}
+.isLaptop .team-box {
+    height: 225px;
+    width: 294px;
+    margin-bottom: 12px;
+}
+.isDesktop .team-box {
+    height: 300px;
+    width: 392px;
     margin-bottom: 16px;
 }
 
@@ -546,33 +684,91 @@ a.team-box {
 }
 
 .team-column-spacer {
-	width: 2%;
 	float: left;
-	height: 300px;
 	margin-bottom: 16px;
+}
+.isMobileTall .team-column-spacer, .isMobileWide .team-column-spacer {
+    display: none;
+}
+.isLaptop .team-column-spacer {
+	width: 12px;
+    display: inline;
+    height: 200px;
+}
+.isDesktop .team-column-spacer  {
+	width: 16px;
+	display: inline;
+    height: 300px;
 }
 
 .team-overlay {
 	position: absolute;
-	width: 332px;
-	height: 240px;
 	right: 0; bottom: 0; left: 0;
 	background: rgba(0,0,0,0.8);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+.isMobileTall .team-overlay {
+    height: 230px;
+    width: 300px;
+	padding: 15px 30px;
+}
+.isMobileWide .team-overlay {
+    height: 306px;
+    width: 400px;
+	padding: 30px;
+}
+.isLaptop .team-overlay{
+    height: 225px;
+    width: 294px;
+	padding: 15px 30px;
+}
+.isDesktop .team-overlay {
+    height: 300px;
+    width: 392px;
 	padding: 30px;
 }
 
 .team-title p {
-	padding-top: 25px;
 	text-align: left;
 	color: #FFFFFF;
+}
+.isMobileTall .team-title p, .isLaptop .team-title p {
+	padding-top: 5px;
+	font-size: 13px;
+}
+.isMobileWide .team-title p, .isDesktop .team-title p {
+	padding-top: 25px;
+}
+
+.isMobileTall .team-title h2, .isLaptop .team-title h2 {
+	font-size: 20px;
+	margin-bottom: 10px;
 }
 
 .team-links {
 	position: absolute;
-	width: 332px;
 	height: auto;
-	text-align: right;
+}
+.isMobileTall .team-links {
+	width: 240px;
+	bottom: 15px;
+	text-align: center;
+}
+.isMobileWide .team-links {
+	width: 340px;
 	bottom: 30px;
+	text-align: right;
+}
+.isLaptop .team-links {
+	width: 234px;
+	bottom: 15px;
+	text-align: center;
+}
+.isDesktop .team-links {
+	width: 332px;
+	bottom: 30px;
+	text-align: right;
 }
 
 .team-links i {
@@ -581,6 +777,9 @@ a.team-box {
 
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
+}
+.isMobileTall .team-links i, .isLaptop .team-links i {
+	font-size: 24px;
 }
 
 .team-links i:hover {
@@ -593,6 +792,9 @@ a.team-box {
 
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
+}
+.isMobileTall .team-box .team-overlay, .isLaptop .team-box .team-overlay {
+	top: 80%;
 }
 
 .team-box:hover .team-overlay {
@@ -615,14 +817,27 @@ a.team-box {
 	font-weight: 400;
 	font-family: "Montserrat", sans-serif;
 	text-align: center;
-	font-size: 26px;
 	line-height: 110%;
+}
+.isMobileTall .email {
+	margin-top: -50px;
+	font-size: 13px;
+}
+.isMobileWide .email {
+	margin-top: -30px;
+	font-size: 18px;
+}
+.isLaptop .email {
+	font-size: 26px;
+}
+.isDesktop .email {
+	font-size: 26px;
 }
 
 .social-wrapper {
 	overflow: hidden;
 	margin-bottom: 50px;
-	width: 800px;
+	width: 100%;
 	height: 100%;
 	padding-bottom: 20px;
 }
@@ -630,9 +845,20 @@ a.team-box {
 .social-box {
 	float: left;
 	padding: 15px 15px 0 15px;
-	width: calc(16.6% - 30px);
 	height: auto;
 	text-align: center;
+}
+.isMobileTall .social-box {
+	width: calc(50% - 30px);
+}
+.isMobileWide .social-box {
+	width: calc(50% - 30px);
+}
+.isLaptop .social-box {
+	width: calc(33.3% - 30px);
+}
+.isDesktop .social-box {
+	width: calc(16.6% - 30px);
 }
 
 .social-base {
@@ -682,7 +908,7 @@ a.team-box {
 }
 
 .social-base:hover {
-	color: #060606;	
+	color: #111111;	
 	background: rgba(255, 255, 255, 1);
 }
 

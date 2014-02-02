@@ -1,0 +1,88 @@
+#top {
+	display: none;
+}
+
+#touch-top {
+	display: block;
+}
+
+#downarrow {
+	position: absolute;
+}
+
+#logo {
+	position: absolute;
+}
+
+.isMobileTall .project-box {
+	position: relative;
+	height: auto;
+}
+.isMobileWide .project-box {
+	width: 50%;
+    min-height: 301px;
+}
+
+.isMobileTall .project-imgbox {
+	position: relative;
+	width: 100%;
+	min-height: auto;
+	height: auto;
+	max-height: auto;
+	float: left;
+}
+.isMobileWide .project-imgbox {
+	position: relative;
+	width: 200px;
+	height: 150px;
+	min-height: 150px;
+	float: left;
+}
+
+.isMobileTall .project-overlay {
+	height: auto;
+	width: 100%;
+	background: rgba(0,0,0,0);
+	float: left;
+	opacity: 1;
+	padding: 15px 30px;
+	margin-bottom: 30px;
+}
+.isMobileWide .project-overlay {
+	height: auto;
+	width: 200px;
+	background: rgba(0,0,0,0);
+	opacity: 1;
+	float: left;
+	padding: 15px 30px;
+}
+
+.isMobileTall .project-box h2, .isMobileWide .project-box h2 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.isMobileTall .project-box h4, .isMobileWide .project-box h4 {
+	font-size: 13px;
+	padding-top: 5px;
+}
+
+.team-box .team-overlay {
+	top: 0;
+	background: rgba(0,0,0,0.8);
+
+	-webkit-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.isMobileTall .team-box .team-overlay, .isLaptop .team-box .team-overlay {
+	top: 0;
+}
+
+.isMobileTall .team-box:hover .team-overlay, .isLaptop .team-box:hover .team-overlay {
+	top: 80%;
+}
+
+.team-box:hover .team-overlay {
+	top: 75%;
+	background: rgba(0,0,0,0);
+}
