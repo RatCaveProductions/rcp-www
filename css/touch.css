@@ -14,6 +14,10 @@
 	position: absolute;
 }
 
+.belowfold-work {
+	display: block;
+}
+
 .isMobileTall .project-box {
 	position: relative;
 	height: auto;
@@ -66,23 +70,30 @@
 	padding-top: 5px;
 }
 
+.all-videos {
+	display: none;
+}
+
 .team-box .team-overlay {
-	top: 0;
-	background: rgba(0,0,0,0.8);
+	top: 75%;
+	background: rgba(0,0,0,0);
 
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 }
 
 .isMobileTall .team-box .team-overlay, .isLaptop .team-box .team-overlay {
-	top: 0;
+	top: 80%;
+	background: rgba(0,0,0,0);
 }
 
 .isMobileTall .team-box:hover .team-overlay, .isLaptop .team-box:hover .team-overlay {
-	top: 80%;
+	top: 0;
+	background: rgba(0,0,0,0.8);
 }
 
 .team-box:hover .team-overlay {
-	top: 75%;
-	background: rgba(0,0,0,0);
+	top: 0;
+	background: rgba(0,0,0,0.8);
+	
 }

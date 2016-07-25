@@ -12,6 +12,7 @@
 	* COLOR PALETTE:
 
 		#0074D9 - Primary Blue
+		#2991EC - Highlight Blue
 
 		#222222 - Light Gray
 		#111111 - Medium Gray
@@ -107,6 +108,7 @@ h4 {
 	font-size: 16px;
 	font-family: "Raleway", Arial, sans-serif;
 	line-height: 130%;
+	margin-bottom: 10px;
 }
 
 p {	
@@ -141,24 +143,24 @@ p.center-text {
 	margin: 0 100px 50px 100px;
 }
 
-p.center-text-small {
-	margin: 20px 100px;
-	padding: 0 20px;
+p.center-text-small {	
 	text-align: center;
 }
 .isMobileTall p.center-text-small {
 	padding: 0 10px;
-	margin: 0 0 50px 0;
+	margin: 0 0 20px 0;
 }
 .isMobileWide p.center-text-small {
 	padding: 0 10px;
-	margin: 0 0 50px 0;
+	margin: 0 0 20px 0;
 }
 .isLaptop p.center-text-small {
-	margin: 0 0 50px 0;
+	padding: 0 20px;
+	margin: 0 0 30px 0;
 }
 .isDesktop p.center-text-small {
-	margin: 0 100px 50px 100px;
+	padding: 0 20px;
+	margin: 0 100px 30px 100px;
 }
 
 p span {
@@ -177,7 +179,6 @@ p a:hover {
 	color: #FFFFFF;
 }
 
-
 p a span {
 	color: #999999;
 	font-size: 36px;
@@ -188,7 +189,6 @@ p a span {
 
 p a:hover span {
 	color: #FFFFFF;
-
 }
 
 
@@ -487,11 +487,11 @@ img {
 	padding-top: 17px;
 }
 .isMobileWide .icon-base i {
-	font-size: 36px;
-	padding-top: 22px;
+	font-size: 30px;
+	padding-top: 25px;
 }
 .isLaptop .icon-base i, .isDesktop .icon-base i {
-	padding-top: 27px;
+	padding-top: 35px;
 }
 
 .isMobileTall .icon-box h3 {
@@ -535,7 +535,7 @@ img {
 #filters {
 	float: left;
 	margin-bottom: 50px;
-	width: 800px;
+	width: 100%;
 }
 
 .filter-spacer {
@@ -546,9 +546,13 @@ img {
 }
 
 #project-content {
-	float: left;
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
+}
+
+.belowfold-work {
+	display: none;
 }
 
 .project-box {
@@ -576,11 +580,6 @@ img {
 
 a.project-box {
 	text-decoration: none;
-}
-
-.work-column-spacer {
-	float: left;
-	margin-bottom: 16px;
 }
 
 .project-imgbox {
@@ -632,6 +631,35 @@ a.project-box {
 	font-size: 14px;
 }
 
+.all-videos {
+    display: block;
+    background: #0074D9;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    width: 50%;
+    margin: 50px auto 0 auto;
+    padding: 11px 0;
+    -webkit-transition: background 0.3s;
+}
+
+.all-videos:hover {
+	background: #2991EC;
+}
+
+a.all-videos {
+	text-decoration: none;
+}
+
+#portfolio {
+	min-height: 560px;
+}
+
+.back-button {
+	position: absolute;
+	padding-top: 12px;
+}
 
 
 
@@ -676,7 +704,7 @@ a.team-box {
 
 .team-box img {
 	position: absolute;
-	top: 0; right: 0; right: 0; bottom: 0;
+	top: -10px; right: 0; right: 0; bottom: 0;
 	min-height: 100%;
 	width: 100%;
 	height: auto;
@@ -787,14 +815,14 @@ a.team-box {
 }
 
 .team-box .team-overlay {
-	top: 75%;
+	top: 100%; /*75%*/
 	background: rgba(0,0,0,0);
 
 	-webkit-transition: all 0.4s;
 	transition: all 0.4s;
 }
 .isMobileTall .team-box .team-overlay, .isLaptop .team-box .team-overlay {
-	top: 80%;
+	top: 100%; /*80%*/
 }
 
 .team-box:hover .team-overlay {
@@ -812,26 +840,29 @@ a.team-box {
     ==========================================================  */
 
 
-.email {
+.emailaddress {
 	letter-spacing: 0.06em;
 	font-weight: 400;
 	font-family: "Montserrat", sans-serif;
 	text-align: center;
 	line-height: 110%;
+	padding: 0;
 }
-.isMobileTall .email {
-	margin-top: -50px;
+.isMobileTall .emailaddress {
 	font-size: 13px;
+	margin-bottom: 50px;
 }
-.isMobileWide .email {
-	margin-top: -30px;
+.isMobileWide .emailaddress {
 	font-size: 18px;
+	margin-bottom: 50px;
 }
-.isLaptop .email {
+.isLaptop .emailaddress {
 	font-size: 26px;
+	margin-bottom: 70px;
 }
-.isDesktop .email {
+.isDesktop .emailaddress {
 	font-size: 26px;
+	margin-bottom: 70px;
 }
 
 .social-wrapper {
@@ -875,6 +906,18 @@ a.team-box {
 	-webkit-transition: background 0.3s, color 0.3s;
 	transition: background 0.3s, color 0.3s;
 }
+.isMobileTall .social-base {
+	width: 60px;
+	height: 60px;
+}
+.isMobileWide .social-base {
+	width: 80px;
+	height: 80px;
+}
+.isLaptop .social-base, .isDesktop .social-base {
+	width: 100px;
+	height: 100px;
+}
 
 .social-base:after {
 	position: absolute;
@@ -902,9 +945,19 @@ a.team-box {
 .social-base i {
 	position: absolute;
 	display: block;
-	padding-top: 27px;
 	width: 100%;
 	height: 100%;	
+}
+.isMobileTall .social-base i {
+	font-size: 26px;
+	padding-top: 17px;
+}
+.isMobileWide .social-base i {
+	font-size: 30px;
+	padding-top: 25px;
+}
+.isLaptop .social-base i, .isDesktop .social-base i {
+	padding-top: 35px;
 }
 
 .social-base:hover {
@@ -995,56 +1048,6 @@ p.uparrow i:hover {
 
 /*  ==========================================================
 
-	* PRELOADER
-
-    ==========================================================  */
-
-
-#preloader {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 3; /* makes sure it stays on top */
-    background: #060606; /* change if the mask should have another color than white */
-}
-
-#status {
-    position: absolute;
-    top: 50%; /* centers the loading animation vertically on the screen */
-    left: 50%; /* centers the loading animation horizontally on the screen */
-    margin: -32px 0 0 -100px; /* is width and height divided by two */
-    width: 200px;
-	color: #FFFFFF;
-	font-size: 36px;
-	text-align: center;
-}
-
-#status span {
-	color: #333333;
-	font-size: 24px;	
-}
-
-.custom-theme {
-	margin-top: 15px;
-	padding: 20px;
-	border: 0 solid #333333;
-	border-radius: 4px;
-	background-color: #333333;
-}
-
-.custom-theme .qtip-content {
-	color: #FFFFFF;
-	font-size: 14px;
-	font-family: "Raleway", Arial, sans-serif;
-}
-
-
-
-
-/*  ==========================================================
-
 	* ISOTOPE
 
     ==========================================================  */
@@ -1092,4 +1095,64 @@ p.uparrow i:hover {
     transition-duration: 0s;
 }
 
-/* End: Recommended Isotope styles */
+
+
+
+/*  ==========================================================
+
+	* MAILCHIMP
+
+    ==========================================================  */
+
+.isDesktop #mc_embed_signup
+{
+    padding: 0 100px;
+}
+
+#mc-embedded-subscribe-form
+{
+    overflow: hidden;
+    padding: 0; 
+    margin: 0;
+}
+
+#mce-EMAIL 
+{
+    float: left;
+    height: 36px;
+    width: 72%;
+    padding: 0 15px;
+    margin: 0;
+    border: none;
+    margin-right: 3%;
+    box-sizing: border-box;
+    color: #222222;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+.isMobileTall #mce-EMAIL
+{
+    font-size: 11px;
+}
+
+#mc-embedded-subscribe
+{
+    float: left;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+    height: 36px;
+    width: 25%;
+    background: #0074D9;
+    border: none;
+    -webkit-transition: background 0.3s;
+}
+.isMobileTall #mc-embedded-subscribe
+{
+    font-size: 11px;
+}
+
+#mc-embedded-subscribe:hover
+{
+    background: #2991EC;
+}
